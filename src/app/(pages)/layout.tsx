@@ -1,6 +1,6 @@
 "use client";
 import { NuqsAdapter } from "nuqs/adapters/next";
-import { Navbar } from "@/component/Ecommerce/Navbar/Navbar";
+import { Navbar } from "@/components/Ecommerce/Navbar/Navbar";
 
 export default function Layout({
   children,
@@ -8,9 +8,8 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-   <div>
+    <div>
       <>
-        <Navbar />
         <NuqsAdapter>{children}</NuqsAdapter>
       </>
     </div>

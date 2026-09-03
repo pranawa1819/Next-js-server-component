@@ -28,14 +28,16 @@ export const TopNav = () => {
             value={searchData}
             placeholder="What are you looking for....."
             onChange={(e) => setSearchData(e.target.value)}
+            aria-label="Product name"
             className=" h-12 rounded-3xl pr-24 hover:cursor-text text-black"
           />
-
-          <BiSearch
-            className="rounded-3xl absolute right-2 top-1/2 -translate-y-1/2 mr-3"
-            size={16}
-            color="black"
-          />
+          <Button aria-label="Search">
+            <BiSearch
+              className="rounded-3xl absolute right-2 top-1/2 -translate-y-1/2 mr-3 cursor-pointer"
+              size={16}
+              color="black"
+            />
+          </Button>
         </div>
         <HiHeart size={20} className="text-black cursor-pointer" />
 

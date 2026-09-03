@@ -1,4 +1,4 @@
-import ProductCard from "@/component/Ecommerce/Home/ProductCard";
+import ProductCard from "@/components/Ecommerce/Home/ProductCard";
 
 const LandingPage = () => {
   return (

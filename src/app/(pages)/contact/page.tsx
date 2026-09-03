@@ -1,16 +1,20 @@
-import Hero from "@/component/PPR/Hero";
-import LatestUsers from "@/component/PPR/LatestUsers";
-import UsersSkeleton from "@/component/PPR/UsersSkeleton";
-import { Suspense } from "react";
+import ButtonAnimation from "@/components/Animation/buttonAnimation";
+import Demo from "@/components/Animation/scrollAnimation";
+import { Navbar } from "@/components/Ecommerce/Navbar/Navbar";
 
 export default function ContactPage() {
   return (
     <>
-      <Hero />
+      {/* <Hero />
 
       <Suspense fallback={<UsersSkeleton />}>
         <LatestUsers />
-      </Suspense>
+      </Suspense> */}
+      {/* <Animation/> */}
+      <Navbar />
+      <ButtonAnimation/>
+      <Demo/>
+
     </>
   );
 }
